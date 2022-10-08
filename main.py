@@ -9,9 +9,9 @@ insertion_value = int(input())
 
 for i in range(len(numbers)):
     if numbers[i] < insertion_value:
-        index = i
-    if numbers[i] >= insertion_value:
+        index = i + 1
+    if numbers[i] > insertion_value:
         break
 
-numbers.insert(i,insertion_value)
+numbers.insert(index,insertion_value)
 print(numbers)
